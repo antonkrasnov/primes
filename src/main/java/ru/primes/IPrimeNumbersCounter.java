@@ -2,6 +2,8 @@ package ru.primes;
 
 public interface IPrimeNumbersCounter {
 
-	int calculatePrimes(int num);
+	int getPrimesCount(int num);
+
+	String getName();
 
 }

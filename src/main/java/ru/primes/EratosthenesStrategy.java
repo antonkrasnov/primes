@@ -5,7 +5,7 @@ import java.util.BitSet;
 public class EratosthenesStrategy implements IPrimeNumbersCounter {
 
 	@Override
-	public int calculatePrimes(int num) {
+	public int getPrimesCount(int num) {
 		final boolean PRINT = false;
 		int count = 0;
 		int i;
@@ -38,4 +38,8 @@ public class EratosthenesStrategy implements IPrimeNumbersCounter {
 		return count;
 	}
 
+	@Override
+	public String getName() {
+		return getClass().getSimpleName();
+	}
 }
