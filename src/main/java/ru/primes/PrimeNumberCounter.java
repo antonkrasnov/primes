@@ -1,11 +1,17 @@
 package ru.primes;
 
+import ru.primes.strategy.EratosthenesStrategy;
+import ru.primes.strategy.MillerRabinStrategy;
+
 public class PrimeNumberCounter {
-	private static final int NUMBER_LIMIT = 50_000_000;
+	private static final int NUMBER_LIMIT = 10_000_000;
 
 	// можем менять границу для применения методов (здесь
 	// 2000000 взято с потолка в качестве примера)
 	private static final int STRATEGY_THRESHOLD = 2_000_000;
+
+	private PrimeNumberCounter() {
+	}
 
 	public static void main(String[] args) {
 		/*
@@ -14,7 +20,7 @@ public class PrimeNumberCounter {
 		 * независимых класса для метода решета и метода Миллера: решето для
 		 * чисел с 1 по NUMBER_LIMIT, а Миллера-Рабина - c NUMBER_LIMIT по М (диапазон больших чисел)
 		 */
-		IPrimeNumbersCounter strategy;
+		IPrimesCounter strategy;
 //		if (STRATEGY_THRESHOLD < NUMBER_LIMIT) {
 			// для больших чисел предпочтительнее использовать
 			// вероятностные методы (в нашем случае метод
@@ -27,7 +33,7 @@ public class PrimeNumberCounter {
 			calculatePrimes(strategy);
 	}
 
-	private static void calculatePrimes(IPrimeNumbersCounter strategy) {
+	private static void calculatePrimes(IPrimesCounter strategy) {
 		long startTime;
 		long endTime;
 		startTime = System.currentTimeMillis();

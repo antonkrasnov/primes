@@ -1,8 +1,10 @@
-package ru.primes;
+package ru.primes.strategy;
+
+import ru.primes.IPrimesCounter;
 
 import java.util.BitSet;
 
-public class EratosthenesStrategy implements IPrimeNumbersCounter {
+public class EratosthenesStrategy implements IPrimesCounter {
 
 	@Override
 	public int getPrimesCount(int num) {

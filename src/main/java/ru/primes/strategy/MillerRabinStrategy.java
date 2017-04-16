@@ -1,8 +1,10 @@
-package ru.primes;
+package ru.primes.strategy;
+
+import ru.primes.IPrimesCounter;
 
 import java.math.BigInteger;
 
-public class MillerRabinStrategy implements IPrimeNumbersCounter {
+public class MillerRabinStrategy implements IPrimesCounter {
 
 	@Override
 	public int getPrimesCount(int num) {
