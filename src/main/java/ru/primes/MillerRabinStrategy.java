@@ -2,13 +2,10 @@ package ru.primes;
 
 import java.math.BigInteger;
 
-/**
- * @author Anton Krasnov
- */
 public class MillerRabinStrategy implements IPrimeNumbersCounter {
 
 	@Override
-	public int primeNumbersQuantity(int num) {
+	public int calculatePrimes(int num) {
 		int count = 0;
 		for (int i = 2; i <= num; i++) {
 			BigInteger bigInteger = BigInteger.valueOf(i);

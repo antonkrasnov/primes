@@ -2,13 +2,10 @@ package ru.primes;
 
 import java.util.BitSet;
 
-/**
- * @author Anton Krasnov
- */
 public class EratosthenesStrategy implements IPrimeNumbersCounter {
 
 	@Override
-	public int primeNumbersQuantity(int num) {
+	public int calculatePrimes(int num) {
 		final boolean PRINT = false;
 		int count = 0;
 		int i;
