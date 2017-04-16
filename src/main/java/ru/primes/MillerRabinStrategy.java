@@ -5,7 +5,7 @@ import java.math.BigInteger;
 /**
  * @author Anton Krasnov
  */
-public class PNCMillerRabin implements PrimeNumbersCounter {
+public class MillerRabinStrategy implements IPrimeNumbersCounter {
 
 	@Override
 	public int primeNumbersQuantity(int num) {

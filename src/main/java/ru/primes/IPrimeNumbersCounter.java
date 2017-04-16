@@ -1,6 +1,6 @@
 package ru.primes;
 
-public interface PrimeNumbersCounter {
+public interface IPrimeNumbersCounter {
 
 	int primeNumbersQuantity(int num);
 

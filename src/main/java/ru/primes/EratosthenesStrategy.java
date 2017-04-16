@@ -5,7 +5,7 @@ import java.util.BitSet;
 /**
  * @author Anton Krasnov
  */
-public class PNCEratosthenes implements PrimeNumbersCounter {
+public class EratosthenesStrategy implements IPrimeNumbersCounter {
 
 	@Override
 	public int primeNumbersQuantity(int num) {
