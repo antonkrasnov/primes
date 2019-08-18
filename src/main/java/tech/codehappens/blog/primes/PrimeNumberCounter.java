@@ -1,7 +1,7 @@
-package ru.primes;
+package tech.codehappens.blog.primes;
 
-import ru.primes.strategy.EratosthenesStrategy;
-import ru.primes.strategy.MillerRabinStrategy;
+import tech.codehappens.blog.primes.strategy.EratosthenesStrategy;
+import tech.codehappens.blog.primes.strategy.MillerRabinStrategy;
 
 public class PrimeNumberCounter {
 	private static final int NUMBER_LIMIT = 10_000_000;

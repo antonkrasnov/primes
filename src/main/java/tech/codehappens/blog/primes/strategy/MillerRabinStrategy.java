@@ -1,6 +1,6 @@
-package ru.primes.strategy;
+package tech.codehappens.blog.primes.strategy;
 
-import ru.primes.IPrimesCounter;
+import tech.codehappens.blog.primes.IPrimesCounter;
 
 import java.math.BigInteger;
 

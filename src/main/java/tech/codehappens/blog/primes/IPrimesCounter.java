@@ -1,4 +1,4 @@
-package ru.primes;
+package tech.codehappens.blog.primes;
 
 public interface IPrimesCounter {
 
